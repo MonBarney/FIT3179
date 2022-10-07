@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "GDP per Capita of each country in 2020",
     "width": 500,
-    "height": 300,
+    "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
       "url": "https://raw.githubusercontent.com/MonBarney/FIT3179/main/Homework%209/ne_110m_admin_0_countries.json",
@@ -59,7 +59,7 @@
         },
         "tooltip": [
           {"field": "properties.NAME_LONG", "type": "nominal", "title": "Country Name"},
-          {"field": "GDP Per Capita", "type": "quantitative"}
+          {"field": "GDP Per Capita", "type": "quantitative", "format": ","}
         ]
       }
     }
